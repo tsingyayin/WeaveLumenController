@@ -1,0 +1,13 @@
+name: WeaveLumenController
+version: '${version}'
+main: cn.yxgeneral.weavestudio.weavelumencontroller.WeaveLumenController
+api-version: '1.21'
+
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  weavelumencontroller:
+      description: "weavelumencontroller root command"
+      usage: /weavelumencontroller
+      aliases: [weavelumencontroller, wlc]

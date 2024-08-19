@@ -1,0 +1,37 @@
+config_version: "1.0" # DO NOT CHANGE THIS VALUE, IT IS USED TO CHECK THE CONFIG VERSION
+
+# We call all the blocks that can provide light as LumenBlock
+language: 'en_US'
+prefix: "&b[&aLumen Controller&b] &r"
+session:
+  timeout: 600 # seconds, must be 0 - 3600
+command:
+  # If a plugin on your server overwrites this command, you may need to try changing it to minecraft:setblock
+  template: "setblock %x% %y% %z% %name%%data% replace"
+  default_radius: 10 # The default radius of the auto command
+
+# Define the LumenBlock should be replaced by which block
+# Default value is 'air'
+replace:
+  torch: air
+
+# Define which LumenBlock should be considered by auto command
+# Generally speaking, we recommend that do not let the list contains the block
+# that has association with the redstone, unless you know what you are doing.
+whitelist:
+  - torch
+  - wall_torch # torch on the wall, see SpigotAPI documentation for more information
+  - soul_torch
+  - soul_wall_torch # torch on the wall
+  - lantern
+  - soul_lantern
+  - sea_lantern
+  - glowstone
+  - ochre_froglight
+  - verdant_froglight
+  - pearlescent_froglight
+  - shroomlight
+  - end_rod
+  - jack_o_lantern
+
+
