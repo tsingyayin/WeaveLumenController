@@ -1,0 +1,12 @@
+command:
+  help:
+    - "/wlc help - Show this help message"
+    - "/wlc reload - Reload the configuration"
+    - "/wlc create - Start the selection of a new lumen set"
+    - "/wlc toggle - Whether in selection mode or not"
+    - "/wlc auto <radius> - Automatically select the blocks within the radius"
+    - "/wlc clear - Clear the whole selection"
+    - "/wlc generate - Generate the CommandBlock Structure"
+
+permission:
+  noPermission: "您没有权限执行此操作"

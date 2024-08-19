@@ -1,6 +1,7 @@
 # User-specific stuff
 .idea/
 .VSCodeCounter/
+.vscode/
 *.iml
 *.ipr
 *.iws
